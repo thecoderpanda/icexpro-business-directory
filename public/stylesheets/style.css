@@ -1,0 +1,175 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#map { height: 180px; }
+
+.homepageBody {
+	background-color: #fcd833;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homepageBody .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homepageBody .container h1 {
+	font-size: 45px;
+}
+
+.homepageBody span {
+	padding-bottom: 7px;
+	border-bottom: 4px solid white;
+}
+
+.navbar {
+	z-index: 100;
+	background-color: #fcd833;
+	height: 200px;
+}
+
+.navbar a  {
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.navbar a, .navbar a:hover, .navbar a:link, .navbar a:visited, .navbar button {
+	color: black;
+}
+
+.collapse a:hover {
+	border-bottom: 1px solid black;
+}
+
+a, a:hover, a:link, a:visited {
+  color: black;
+}
+
+#messages {
+	margin: 20px;
+}
+
+.success { 
+	background-color: #c3e6cb;
+}
+
+.error { 
+	background-color: #f8d7da;
+}
+
+#messages ul {
+	padding: 0;
+	margin: 0;
+}
+
+#messages li {
+	list-style: none;
+	padding: 10px;
+}
+
+
+.col-md-10 {
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+
+.businessCard {
+	border: 1px solid lightgrey;
+	box-shadow: none;
+	transition: box-shadow 0.2s ease-out;
+	margin-top: 40px;
+}
+
+.businessCard:hover {
+	-webkit-box-shadow: 10px 10px 15px 1px rgba(163,160,163,0.71);
+	-moz-box-shadow: 10px 10px 15px 1px rgba(163,160,163,0.71);
+	box-shadow: 10px 10px 15px 1px rgba(163,160,163,0.71);
+	border-bottom: none;
+}
+
+.col-md-8 a p, .col-md-8 a:link p, .col-md-8 a:hover p, .col-md-8 a:visited p{
+	color: #0083c3;
+}
+
+.col-md-8 a:hover p {
+	text-decoration: underline;
+	text-decoration-color: #0083c3;
+}
+
+
+.businessCard .col-md-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid black;
+	padding-left: 20px;
+}
+
+.btn-warning {
+	background-color: #fedb00;
+	margin-right: 15px;
+}
+
+.slogan {
+	display: inline;
+	margin-right: 10px;
+}
+
+i.fa-star {
+	font-size: 30px;
+}
+
+.checked {
+	color: orange;
+}
+
+.business {
+	display: flex;
+	flex-direction: column;
+}
+
+.reviews {
+	display: flex;
+	flex-direction: column;
+}
+
+.quickInfo ul {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	margin-top: 10px;
+}
+
+.quickInfo ul li {
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.businessHeader {
+	width: 90%;
+}
+
+.reviewListing {
+	border-top: 1px solid lightgrey;
+}
+
+.reviewListing h2 {
+	font-weight: bold;
+}
+
+#map {
+  height: 100%;
+}

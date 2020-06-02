@@ -1,0 +1,55 @@
+<% include partials/head %>
+	<div class="container mb-5">
+		<h1 class="display-4 text-center">Add a business</h1>
+		<% if(errors){ %>
+			<ul style="padding: 0; margin: 0; list-style: none">
+				<% errors.forEach((error) => { %>
+					<li class="alert alert-danger"><%= error.msg %></li>
+				<% }) %>
+			</ul>	
+		<% } %>
+		<form method="post" action="/business/add">
+		  <div class="form-group">
+		    <label for="business">Business Name</label>
+		    <input type="text" class="form-control" id="business" placeholder="Business name" name="businessName">
+		  </div>
+		  <div class="form-group">
+		    <label for="slogan">Business Slogan</label>
+		    <input type="text" class="form-control" id="slogan" placeholder="Business Slogan (Optional)" name="slogan">
+		  </div>
+		  <div class="form-group">
+		    <label for="owner">Business Owner</label>
+		    <input type="text" class="form-control" id="owner" placeholder="Full name" name="ownerName">
+		  </div>
+		  <div class="form-group">
+		    <label for="type">Business Category</label><br>
+		    <select class="form-control" name="category">
+		    	<% categories.forEach((category) => { %>
+		    		<option value="<%= category.title %>"><%= category.title %></option>
+		    	<% }) %>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="description">Business Description</label>
+		    <textarea class="form-control" id="description" placeholder="Description" name="description"></textarea>
+		  </div>
+		  <div class="form-group">
+		    <label for="number">Phone number</label>
+		    <input type="text" class="form-control" id="number" placeholder="Phone number" name="phone">
+		  </div>
+		  <div class="form-group">
+		    <label for="street">Street Address</label>
+		    <input type="text" class="form-control" id="street" placeholder="Street address" name="street">
+		  </div>
+		  <div class="form-group">
+		    <label for="city">City</label>
+		    <input type="text" class="form-control" id="city" placeholder="City" name="city">
+		  </div>
+		  <div class="form-group">
+		    <label for="postcode">Postcode</label>
+		    <input type="text" class="form-control" id="postcode" placeholder="Postcode" name="postcode">
+		  </div>
+		  <button type="submit" class="btn btn-warning">Submit</button>
+		</form>
+	</div>
+<% include partials/footer %>
